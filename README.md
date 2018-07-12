@@ -1,1 +1,3 @@
-Rename Tab Title of Domain/URL
+## Rename Tab Title of Domain/URL
+
+![alt text](screenshot.png "Screenshot")
