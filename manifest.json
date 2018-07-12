@@ -1,0 +1,32 @@
+{
+	"manifest_version": 2,
+	"name": "Rename Tab Title of Domain/URL",
+	"short_name": "RTToD",
+	"author": "Prashant Kamdar",
+	"version": "1.0",
+	"description": "Renames all titles of a particular domain or a single URL.",
+	"icons": {
+		"48": "icon.png"
+	},
+	"permissions": [
+		"storage",
+		"activeTab"
+	],
+	"content_scripts": [
+		{
+			"matches": [
+				"<all_urls>"
+			],
+			"js": [
+				"script.js"
+			],
+			"run_at": "document_end"
+		}
+	],
+	"browser_action": {
+		"browser_style": false,
+		"default_icon": "icon.png",
+		"default_title": "Rename Tab Title of Domain/URL",
+		"default_popup": "popup/popup.html"
+	}
+}
